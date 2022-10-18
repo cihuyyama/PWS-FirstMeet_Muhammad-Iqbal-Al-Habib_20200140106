@@ -27,6 +27,11 @@ public class AccountJpaController implements Serializable {
     }
     private EntityManagerFactory emf = Persistence.createEntityManagerFactory("tratix_learnmigratedb_jar_0.0.1-SNAPSHOTPU");
 
+    public AccountJpaController() {
+    }
+    
+    
+
     public EntityManager getEntityManager() {
         return emf.createEntityManager();
     }
